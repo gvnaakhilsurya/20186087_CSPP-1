@@ -14,7 +14,7 @@ def main():
             sub_str = sub_str + inputstr[i]
         if len(substr)>len(temp_str):
             temp_strsub_str 
-   (tempstr)
+   (temp_str)
 
 if __name__ == "__main__":
     main()
