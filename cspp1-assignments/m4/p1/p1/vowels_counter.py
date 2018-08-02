@@ -7,10 +7,13 @@ Number of vowels: 5
 @author :gvnaakhil
 '''
 def main():
-    s = input()
-    # the input string is in s
-    # remove pass and start your code here
-    pass
+    S = input()
+    NUMVOWELS = 0
+    for char in S:
+        if char == 'a' or char == 'e' or char == 'i' \
+           or char == 'o' or char == 'u':
+            NUMVOWELS += 1
+    print(NUMVOWELS)
 
 if __name__ == "__main__":
     main()
