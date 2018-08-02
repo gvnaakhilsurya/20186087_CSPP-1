@@ -5,7 +5,7 @@ def main():
     '''
     program to print  longest sequence in a string
     '''
-    input_str = input() 
+    input_str = input()
     temp_str = ""
     i in range(len(input_str)-1):  
         sub_str = input_str[i] 
