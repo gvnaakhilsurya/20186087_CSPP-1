@@ -12,13 +12,13 @@ def main():
     Write a program that counts up the number of vowels contained in the string s
     Valid vowels are: 'a', 'e', 'i', 'o', and 'u'.
     '''
-    S = input()
-    NUMVOWELS = 0
-    for char in S:
+    str_input = input()
+    num_vowels = 0
+    for char in str_input:
         if char == 'a' or char == 'e' or char == 'i' \
            or char == 'o' or char == 'u':
-            NUMVOWELS += 1
-    print(NUMVOWELS)
+            num_vowels += 1
+    print(num_vowels)
 
 if __name__ == "__main__":
     main()
