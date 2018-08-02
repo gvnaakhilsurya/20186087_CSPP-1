@@ -5,12 +5,12 @@ Write a program that prints the number of times the string 'bob' occurs in s. Fo
 number of times bob occurs is: 2'''
 
 def main():
-	'''
+    '''
 @author : gvnaakhilsurya
 Write a program that prints the number of times
  the sub string in the main string.
 '''
-	s = input()
+    s = input()
 n = len(s)
 i = 0
 C = 0
@@ -19,7 +19,5 @@ for i in range(0, n-2):
         C = C+1
 print(C)
 
-	pass
-
 if __name__== "__main__":
-	main()
+    main()
