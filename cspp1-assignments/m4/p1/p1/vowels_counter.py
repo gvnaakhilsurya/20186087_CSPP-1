@@ -15,8 +15,7 @@ def main():
     str_input = input()
     num_vowels = 0
     for char in str_input:
-        if char == 'a' or char == 'e' or char == 'i' \
-           or char == 'o' or char == 'u':
+        if char in "aioeu":
             num_vowels += 1
     print(num_vowels)
 
