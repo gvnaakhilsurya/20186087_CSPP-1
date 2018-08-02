@@ -11,7 +11,7 @@ def main():
 Write a program that prints the number of times
  the sub string in the main string.
 '''
-str_input = input()
+STR_INPUT = input()
 NUM_LEN = len(str_input)
 i = 0
 C = 0
