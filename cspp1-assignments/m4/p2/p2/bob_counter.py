@@ -15,7 +15,7 @@ str_input = input()
 NUM_LEN = len(str_input)
 i = 0
 c = 0
-for i in range(0, n-2):
+for i in range(0, NUM_LEN-2):
     if(str_input[i] == 'b' and str_input[i+1] == 'o' and str_input[i+2] == 'b'):
         c = c+1
 print(c)
