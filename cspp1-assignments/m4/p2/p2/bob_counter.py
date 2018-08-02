@@ -10,14 +10,14 @@ def main():
 Write a program that prints the number of times
  the sub string in the main string.
 '''
-    s = input()
-n = len(s)
+str_input = input()
+NUM_LEN = len(str_input)
 i = 0
-C = 0
+c = 0
 for i in range(0, n-2):
-    if(s[i] == 'b' and s[i+1] == 'o' and s[i+2] == 'b'):
-        C = C+1
-print(C)
+    if(str_input[i] == 'b' and str_input[i+1] == 'o' and str_input[i+2] == 'b'):
+        c = c+1
+print(c)
 
-if __name__== "__main__":
+if __name__ == "__main__":
     main()
