@@ -11,7 +11,7 @@ def main():
         sub_str = input_str[i] 
         while i+1 < len(input_str) and input_str[i] <= input_str[i+1]:
             i=i+1
-            sub_str = sub_str + inputstr[i]
+            sub_str = sub_str + input_str[i]
         if len(substr)>len(temp_str):
             temp_strsub_str 
    (temp_str)
