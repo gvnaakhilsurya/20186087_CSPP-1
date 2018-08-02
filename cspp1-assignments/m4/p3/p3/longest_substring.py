@@ -13,7 +13,7 @@ def main():
             i=i+1
             sub_str = sub_str + input_str[i]
         if len(substr)>len(temp_str):
-            temp_strsub_str 
+            temp_str=sub_str 
    (temp_str)
 
 if __name__ == "__main__":
