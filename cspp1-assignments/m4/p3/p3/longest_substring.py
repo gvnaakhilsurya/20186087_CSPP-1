@@ -1,7 +1,9 @@
 
-def main():
+    '''
     # the input string is in s
     # remove pass and start your code here
+    '''
+    def main():
     '''
     @author:gvnaakhilsurya
     program to print longest sequence in a string
