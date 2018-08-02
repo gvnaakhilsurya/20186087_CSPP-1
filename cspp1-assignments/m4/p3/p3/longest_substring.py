@@ -1,13 +1,11 @@
-
-    '''
-    # the input string is in s
-    # remove pass and start your code here
-    '''
-    def main():
-    '''
+     '''
     @author:gvnaakhilsurya
     program to print longest sequence in a string
     '''
+def main():
+    # the input string is in s
+    # remove pass and start your code here
+    
     input_str = input()
     temp_str = ""
     for i in range(len(input_str)-1):
