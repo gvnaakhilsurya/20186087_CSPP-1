@@ -1,5 +1,5 @@
 '''
-@author : saitejasedate
+@author :gvnaakhilsurya
 '''
 # Functions | Assignment-1 - Paying Debt off in a Year
 
