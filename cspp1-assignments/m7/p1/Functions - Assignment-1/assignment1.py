@@ -32,7 +32,6 @@ def payingDebtOffInAYear(balance, annualInterestRate, monthlyPaymentRate):
         unpaid_balance = balance - monthlyPaymentRate*balance
         new_balance = unpaid_balance + (annualInterestRate/12.0)*unpaid_balance
         temp=new_balance
-        new_balance=temp
     return round(temp,2) 
     
 
