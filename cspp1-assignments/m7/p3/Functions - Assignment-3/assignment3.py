@@ -30,6 +30,5 @@ def main():
     data = data.split(' ')
     data = list(map(float, data))
     print("Lowest Payment:", payingDebtOff_inAYear(data[0], data[1]))
-    
 if __name__ == "__main__":
     main()
