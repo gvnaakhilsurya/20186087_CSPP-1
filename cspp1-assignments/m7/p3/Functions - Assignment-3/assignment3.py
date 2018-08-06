@@ -25,6 +25,9 @@ def payingDebtOff_inAYear(balance_in, annual_interestrate):
         else:
             break
     return str(round(mon_payrate, 2))
+    '''
+
+    '''
 def main():
     data = input()
     data = data.split(' ')
