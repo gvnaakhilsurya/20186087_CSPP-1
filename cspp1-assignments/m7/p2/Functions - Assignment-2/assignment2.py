@@ -23,14 +23,31 @@
 
 
 
-def payingDebtOffInAYear(balance, annualInterestRate):
-	
+"""the lowest monthly payment that will pay off all debt in under 1 year"""
+def pay_debt_year(blc_1, ann_int_rate):
+    """payingDebt Of Final Year"""
+    min_fixed_month_pay = 0
+    t_bal = blc_1
+    yr_count = 1
+    while blc_1 > 0:
+        min_fixed_month_pay += 10
+        blc_1 = t_bal
+        i = 0
+        for i in range(1, 13):
+            m_intrest_rate = ann_int_rate / 12.0
+            mnthly_unpaid_blc = blc_1 - min_fixed_month_pay
+            blc_1 = mnthly_unpaid_blc + m_intrest_rate*mnthly_unpaid_blc
+            i = i + 1
+        yr_count += 1
+    return min_fixed_month_pay
 
 def main():
-	data = input()
-	data = data.split(' ')
-	data = list(map(float, data))
-	print(payingDebtOffInAYear(data[0],data[1]))
-	
-if __name__== "__main__":
-	main()
+    """main"""
+    data = input()
+    data = data.split(' ')
+    data = list(map(float, data))
+    print("Lowest Payment:", pay_debt_year(data[0], data[1]))
+    
+if __name__ == "__main__":
+    main()
+    
