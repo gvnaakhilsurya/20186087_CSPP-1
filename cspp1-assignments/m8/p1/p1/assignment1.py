@@ -14,10 +14,7 @@ def factorial(n):
         return 1
     else:
          return(n*factorial(n-1))
-    
-    
-
-
+         
 def main():
     a = input()
     print(factorial(int(a)))    
