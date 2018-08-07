@@ -4,7 +4,7 @@
 # This function takes in one number and returns one number.
 
 
-def factorial_num(n):
+def factorial(n):
     '''
     n is positive Integer
 
@@ -13,7 +13,7 @@ def factorial_num(n):
     if n==1:
         return 1
     else:
-         return(n*factorial_num(n-1))
+         return(n*factorial(n-1))
     
     
 
