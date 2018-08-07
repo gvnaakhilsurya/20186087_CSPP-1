@@ -9,7 +9,6 @@
 def factorial(n):
     '''
     n is positive Integer
-
     returns: a positive integer, the factorial of n.
     '''
     if n == 0 or n == 1:
