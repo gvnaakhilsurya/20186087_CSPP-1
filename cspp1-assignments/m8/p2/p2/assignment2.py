@@ -4,7 +4,6 @@
 
 # This function takes in one number and returns one number.
 '''
-
 def sumofdigits(var_n):
     '''
     n is positive Integer
@@ -14,11 +13,10 @@ def sumofdigits(var_n):
         return 0
     else:
         return (var_n %10 + sumofdigits(var_n//10))
- 
+
 def main():
     '''
     main function
-
     '''
     var_n= input()
     print(sumofdigits(int(var_n)))  
