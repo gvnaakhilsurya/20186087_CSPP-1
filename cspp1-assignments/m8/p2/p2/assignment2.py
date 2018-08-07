@@ -13,7 +13,7 @@ def sumofdigits(var_n):
     if var_n== 0:
     	return 0
     else:
-    	return sumofdigits var_n %10 + sumofdigits(var_n//10)
+    	return (var_n %10 + sumofdigits(var_n//10))
  
 
 def main():
