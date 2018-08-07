@@ -10,10 +10,9 @@ def factorial_num(var_n):
     n is positive Integer
     returns: a positive integer, the factorial of n.
     '''
-    if var_n == 0 or var_n == 1:
+    if var_n in (1, 0):
         return 1
-    else:
-         return var_n * factorial_num(var_n-1)
+    return var_n * factorial_num(var_n-1)
 
 def main():
     '''
@@ -21,6 +20,6 @@ def main():
 
     '''
     var_n = input()
-    print(factorial_num(int(var_n)))    
+    print(factorial_num(int(var_n)))
 if __name__ == "__main__":
     main()
