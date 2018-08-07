@@ -1,7 +1,7 @@
 '''# Exercise: Assignment-2
 @author:gvnaakhilsurya
-# Write a Python function, sumofdigits, that takes in one number and returns the sum of digits of given number.
-
+# Write a Python function, sumofdigits, that takes in one number
+and returns the sum of digits of given number.
 # This function takes in one number and returns one number.
 '''
 def sumofdigits(var_n):
@@ -13,7 +13,7 @@ def sumofdigits(var_n):
         return 0
     else:
         return (var_n %10 + sumofdigits(var_n//10))
-
+ 
 def main():
     '''
     main function
@@ -23,4 +23,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
