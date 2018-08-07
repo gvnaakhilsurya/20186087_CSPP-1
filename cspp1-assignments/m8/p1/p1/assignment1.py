@@ -16,6 +16,9 @@ def factorial(n):
     else:
          return n*factorial(n-1)
 def main():
+    '''
+
+    '''
     a = input()
     print(factorial(int(a)))    
 if __name__ == "__main__":
