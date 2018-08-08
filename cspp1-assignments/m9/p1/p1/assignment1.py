@@ -14,7 +14,8 @@ def is_word_guessed(secret_word, letters_guessed):
     returns: boolean, True if all the letters of secret_word are in letters_guessed;
       False otherwise
     '''
-    if split.seceret_word == split.letters_guessed:
+    for in range(len(letters_gussed)):
+    if seceret_word[i] == letters_guessed[i]:
         return True
     else:
         return False
