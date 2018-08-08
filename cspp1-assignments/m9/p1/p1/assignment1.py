@@ -21,12 +21,6 @@ def is_word_guessed(secret_word, letters_guessed):
     else:
         return False
 
-           
-        
-
-    
-   
-
 def main():
     '''
     Main function for the program
