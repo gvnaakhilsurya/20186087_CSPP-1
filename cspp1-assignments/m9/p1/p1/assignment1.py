@@ -14,12 +14,12 @@ def is_word_guessed(secret_word, letters_guessed):
     returns: boolean, True if all the letters of secret_word are in letters_guessed;
       False otherwise
     '''
-    for i in range(len(letters_guessed)):
-        for j in range(len(letters_guessed))
-    if secret_word[i+1] == letters_guessed[j+1]:
-        return True
-    else:
-        return False
+    for char in secret_word[i]:
+        for char in letters_guessed[i]:
+            if char == char:
+                return True
+            else:
+                return False
 
 def main():
     '''
