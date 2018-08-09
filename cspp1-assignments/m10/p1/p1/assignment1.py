@@ -12,15 +12,12 @@ def get_available_letters(letters_guessed):
     returns: string, comprised of letters that represents what letters have not
       yet been guessed.
     '''
-    str2=" "
-    chk_str=string.ascii_lowercase
+    str2 =""
+    chk_str = string.ascii_lowercase
     for i in chk_str:
         if i not in letters_guessed:
             str2 += i
     return str2        
-
-
-
 
 def main():
     '''
