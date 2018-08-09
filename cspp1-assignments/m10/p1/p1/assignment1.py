@@ -12,11 +12,13 @@ def get_available_letters(letters_guessed):
     returns: string, comprised of letters that represents what letters have not
       yet been guessed.
     '''
-    var_temp_string = ""
-    for var_iteratble in secret_word:
-        if var_iteratble not in letters_guessed:
-            var_temp_string+=" "
-    return var_temp_string
+    str2=" "
+    chk_str=string.ascii_lowercase
+    for i in chk_str:
+        if i not in letters_guessed:
+            str2 += i
+    return str2        
+
 
 
 
