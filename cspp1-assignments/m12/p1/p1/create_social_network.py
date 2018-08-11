@@ -39,9 +39,7 @@ def create_social_network(data):
         if data[i] not in d:
             d[data[i]] =data[i+1].split()
 
-    return d                   
-        
-
+    return d
 def main():
     '''
         handling testcase input and printing output
@@ -57,3 +55,4 @@ def main():
 
 if __name__ == "__main__":
  main()
+ 
