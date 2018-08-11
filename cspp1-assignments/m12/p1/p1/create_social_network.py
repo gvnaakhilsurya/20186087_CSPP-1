@@ -37,7 +37,7 @@ def create_social_network(data):
     dict_1 = {}
     for i in range(0, len(data), 1):
         if data[i] not in dict_1:
-            dict_1[data[i]] =data[i+1].split()
+            dict_1[data[i]] = data[i+1].split()
 
     return dict_1
 def main():
