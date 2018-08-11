@@ -31,8 +31,8 @@ def create_social_network(data):
         Empty dictionary is not None, it is a dictionary with no keys
 
     '''
-    d = { }
     data = data.split()
+    d = { }
     for i in range(0,len(data),2):
         if data[i] not in d :
             d[data[i]]=data[i+1]
