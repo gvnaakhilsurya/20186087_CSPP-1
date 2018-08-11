@@ -32,6 +32,7 @@ def create_social_network(data):
 
     '''
     data = data.split()
+    data = remove(follows)
     #print (data)
     #print(data)
     dict_1 = {}
