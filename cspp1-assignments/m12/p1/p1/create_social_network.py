@@ -1,7 +1,6 @@
 '''
      @author :gvnaakhilsurya
 '''
-import ast 
 def create_social_network(data):
     '''
         The data argument passed to the function is a string
