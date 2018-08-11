@@ -34,12 +34,12 @@ def create_social_network(data):
     data = data.split()
     #print (data)
     #print(data)
-    d = {}
+    dict_1 = {}
     for i in range(0, len(data), 1):
         if data[i] not in d:
             d[data[i]] =data[i+1].split()
 
-    return d
+    return dict_1
 def main():
     '''
         handling testcase input and printing output
@@ -55,4 +55,3 @@ def main():
 
 if __name__ == "__main__":
  main()
- 
