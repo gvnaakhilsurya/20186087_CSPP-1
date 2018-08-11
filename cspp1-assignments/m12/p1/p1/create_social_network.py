@@ -36,7 +36,6 @@ def create_social_network(data):
     for i in range(0,len(data),2):
         if data[i] not in d :
             d[data[i]]=data[i+1]
-            d =dict(data)
     return d                   
         
 
