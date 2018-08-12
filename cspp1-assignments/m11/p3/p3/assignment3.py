@@ -29,13 +29,13 @@ def isValidWord(word, hand, wordList):
     	return False
 
 def main():
-	word=input()
-	n=int(input())
-	adict={}
+	word = input()
+	n = int(input())
+	adict = {}
 	for data in range(n):
-		data=input()
-		l=data.split()
-		adict[l[0]]=int(l[1])
+		data = input()
+		l_length = data.split()
+		adict[l[0]] = int(l_length[1])
 	l2=input().split()
 	print(isValidWord(word,adict,l2))
 		
