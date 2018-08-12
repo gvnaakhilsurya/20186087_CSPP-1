@@ -25,9 +25,9 @@ def updateHand(hand, word):
     return hand
 
 def main():
-    n=input()
+    n_num=input()
     adict={}
-    for i in range(int(n)):
+    for i in range(int(n_num)):
         data=input()
         l_length =data.split()
         adict[l_length[0]]=int(l_length[1])
