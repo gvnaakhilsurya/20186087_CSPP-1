@@ -25,13 +25,13 @@ def updateHand(hand, word):
     return hand
 
 def main():
-    n_num=input()
-    adict={}
+    n_num = input()
+    adict = {}
     for i in range(int(n_num)):
-        data=input()
-        l_length =data.split()
-        adict[l_length[0]]=int(l_length[1])
-    data1=input()
+        data = input()
+        l_length = data.split()
+        adict[l_length[0]] = int(l_length[1])
+    data1 = input()
     print(updateHand(adict, data1))
         
 if __name__ == "__main__":
