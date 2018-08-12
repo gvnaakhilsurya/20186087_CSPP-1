@@ -25,6 +25,8 @@ def update_hand(hand, word):
     return hand
 
 def main():
+    '''
+    '''
     n_num = input()
     adict = {}
     for i in range(int(n_num)):
