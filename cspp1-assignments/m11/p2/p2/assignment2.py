@@ -20,7 +20,7 @@ def updateHand(hand, word):
     """
     for letter in word:# if letter is in the word then search in hand
         if letter in hand:# if letter is in hand
-            hand[letter] -=1# then decrement 
+            hand[letter] -=1# then decrement the hand i.e all the letters in word
     return hand
 
 def main():
