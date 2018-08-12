@@ -23,17 +23,20 @@ def update_hand(hand, word):
         if letter in hand:# if letter is in hand
             hand[letter] -= 1# then decrement the hand i.e all the letters in word
     return hand
-
 def main():
     '''
+Implement the updateHand function. Make sure this function has no side effects:
+i.e., it must not mutate the hand passed in. Before pasting your
+function definition here,
+be sure you've passed the appropriate tests in test_ps4a.py.
     '''
     n_num = input()
     adict = {}
-    for i in range(int(n_num)):
+    for data in range(int(n_num)):
         data = input()
         l_length = data.split()
         adict[l_length[0]] = int(l_length[1])
     data1 = input()
-    print(update_hand(adict, data1)) 
+    print(update_hand(adict, data1))
 if __name__ == "__main__":
     main()
