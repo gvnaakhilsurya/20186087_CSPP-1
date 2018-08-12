@@ -34,7 +34,6 @@ def main():
         l_length = data.split()
         adict[l_length[0]] = int(l_length[1])
     data1 = input()
-    print(update_hand(adict, data1))
-        
+    print(update_hand(adict, data1)) 
 if __name__ == "__main__":
     main()
