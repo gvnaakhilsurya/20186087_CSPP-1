@@ -27,7 +27,7 @@ def get_word_score(word, n):
         if i in SCRABBLE_LETTER_VALUES:
             sum_points += SCRABBLE_LETTER_VALUES[i]
     sum_points = sum_points * len(word)
-    if len(word) == n_:#n is the length of scrabble letters given by user,
+    if len(word) == n:#n is the length of scrabble letters given by user,
     #if we can arrange a valid word at a time then we will add +50 to it.
         sum_points = sum_points + 50
     return sum_points
