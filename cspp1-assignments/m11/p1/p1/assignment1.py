@@ -32,9 +32,6 @@ def get_word_score(word, n_):
     #if we can arrange a valid word at a time then we will add +50 to it.
         sum_points = sum_points + 50
     return sum_points
-    
-
-
 def main():
     '''
     Main function for the given problem
