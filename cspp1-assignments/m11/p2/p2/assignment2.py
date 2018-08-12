@@ -30,7 +30,7 @@ def main():
     for i in range(int(n)):
         data=input()
         l_length =data.split()
-        adict[l[0]]=int(l_length[1])
+        adict[l_length[0]]=int(l_length[1])
     data1=input()
     print(updateHand(adict,data1))
         
