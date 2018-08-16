@@ -38,7 +38,7 @@ def is_flush(hand):
         if suit[1] != i[1]:
             return False
     return True
-
+'''
 def is_four_akind(hand):
     cnt = 0
     suit = []
@@ -59,7 +59,7 @@ def is_three_a_kind(hand):
         if suit[k+1] == suit[k]:
             cnt +=1
     return cnt==2
-    
+    '''
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to
