@@ -23,7 +23,7 @@ def is_straight(hand):
     for k in range(len(suit)-1):
         if suit[k+1]-suit[k]!=1:
             return False
-    return True        
+    return True  
 
 
 def is_flush(hand):
@@ -39,7 +39,7 @@ def is_flush(hand):
     for i in hand:
         if suit[1] != i[1]:
             return False
-    return True    
+    return True
 
 def hand_rank(hand):
     '''
