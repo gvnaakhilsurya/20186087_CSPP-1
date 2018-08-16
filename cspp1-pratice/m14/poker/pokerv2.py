@@ -44,7 +44,7 @@ def is_four_a_kind(hand):
     lst1 = [ ]
     for i in hand:
         lst1.append(DICT_P[i[0]])
-        lst1.sort()
+    lst1.sort()
     for k in range(len(lst1)-1):
         if lst1[k+1]== lst1[k]:
             cnt += 1
@@ -56,7 +56,7 @@ def is_three_a_kind(hand):
     lst1 = [ ]
     for i in hand:
         lst1.append(DICT_P[i[0]])
-        lst1.sort()
+    lst1.sort()
     for k in range(len(lst1)-1):
         if lst1[k+1]== lst1[k]:
             cnt += 1
@@ -68,7 +68,7 @@ def is_one_pair(hand):
     lst1 = [ ]
     for i in hand:
         lst1.append(DICT_P[i[0]])
-        lst1.sort()
+    lst1.sort()
     for k in range(len(lst1)-1):
         if lst1[k+1] - lst1[k] == 0:
             cnt += 1
@@ -82,7 +82,7 @@ def is_two_pair(hand):
     lst1 = [ ]
     for i in hand:
         lst1.append(DICT_P[i[0]])
-        lst1.sort()
+    lst1.sort()
     for k in range(len(lst1)-1):
         if lst1[k+1] - lst1[k] == 0:
             cnt += 1
