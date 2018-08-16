@@ -48,7 +48,19 @@ def four_akind(hand):
 	for k in range(len(suit)-1):
 		if suit[k+1] == suit[k]:
 			cnt += 1
-	return cnt ==3	
+	return cnt ==3
+def three_akind(hand):
+	cnt = 0
+		suit = []
+		for i in hand:
+			 suit.append(DICT_P[i[0]])
+			 suit.sort()
+		for k in range(len(suit)-1):
+			if suit[k+1] == suit[k]:
+				cnt += 1
+		return cnt ==2
+
+
 
 def hand_rank(hand):
     '''
