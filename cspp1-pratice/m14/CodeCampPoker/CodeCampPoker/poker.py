@@ -23,7 +23,7 @@ def is_straight(hand):
     for k in range(len(suit)-1):
         if suit[k+1]-suit[k] != 1:
             return False
-    return True  
+    return True
 def is_flush(hand):
     '''
         How do we find out if the given hand is a flush?
