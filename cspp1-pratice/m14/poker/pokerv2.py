@@ -39,6 +39,56 @@ def is_flush(hand):
             return False
     return True
 
+def is_four_a_kind(hand):
+    cnt = 0
+    lst1 = [ ]
+    for i in hand:
+        lst1.append(DICT_P[i[0]])
+        lst1.sort()
+    for k in range(len(lst1)-1):
+        if lst1[k+1]== lst1[k]:
+            cnt += 1
+   
+    return cnt == 3
+
+def is_three_a_kind(hand):
+    cnt = 0
+    lst1 = [ ]
+    for i in hand:
+        lst1.append(DICT_P[i[0]])
+        lst1.sort()
+    for k in range(len(lst1)-1):
+        if lst1[k+1]== lst1[k]:
+            cnt += 1
+   
+    return cnt == 2
+
+def is_one_pair(hand):
+    cnt = 0
+    lst1 = [ ]
+    for i in hand:
+        lst1.append(DICT_P[i[0]])
+        lst1.sort()
+    for k in range(len(lst1)-1):
+        if lst1[k+1] - lst1[k] == 0:
+            cnt += 1
+    
+    
+    return cnt == 1
+
+
+def is_two_pair(hand):
+    cnt = 0
+    lst1 = [ ]
+    for i in hand:
+        lst1.append(DICT_P[i[0]])
+        lst1.sort()
+    for k in range(len(lst1)-1):
+        if lst1[k+1] - lst1[k] == 0:
+            cnt += 1
+
+    return cnt == 2      
+
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to
@@ -63,22 +113,22 @@ def hand_rank(hand):
     # third would be a straight with the return value 1
     # any other hand would be the fourth best with the return value 0
     # max in poker function uses these return values to select the best hand
-    # if is_one_pair(hand):
-    #     return 8
-    # elif is_two_pair(hand):
-    #     return 7
-    # elif is_three_a_kind(hand):
-    #     return 6
-    if is_straight(hand):
+    if is_one_pair(hand):
+        return 8
+    elif is_two_pair(hand):
+        return 7
+    elif is_three_a_kind(hand):
+        return 6
+    elif is_straight(hand):
         return 5
     elif is_flush(hand):
         return 4
-    # elif is_four_a_kind(hand):
-    #     return 2
-    # elif is_straight(hand) and is_flush(hand):
-    #     return 1
-    # else:
-    #     return 0
+    elif is_four_a_kind(hand):
+        return 2
+    elif is_straight(hand) and is_flush(hand):
+        return 1
+    else:
+        return 0
 
 def poker(hands):
     '''
