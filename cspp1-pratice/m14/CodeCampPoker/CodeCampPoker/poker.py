@@ -21,7 +21,7 @@ def is_straight(hand):
         suit.append(D_poke[i[0]])
     suit.sort()
     for k in range(len(suit)-1):
-        if suit[k+1]-suit[k]!=1:
+        if suit[k+1]-suit[k]!= 1:
             return False
     return True  
 def is_flush(hand):
