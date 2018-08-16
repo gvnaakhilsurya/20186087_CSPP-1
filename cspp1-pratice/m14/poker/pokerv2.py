@@ -1,4 +1,5 @@
 '''
+    @author:gvnaakkhilsurya
     Write a program to evaluate poker hands and determine the winner
     Read about poker hands here.
     https://en.wikipedia.org/wiki/List_of_poker_hands
@@ -41,7 +42,7 @@ def is_flush(hand):
 
 def is_four_a_kind(hand):
     '''
-
+program for four a kind
     '''
     cnt = 0
     lst1 = []
@@ -49,23 +50,27 @@ def is_four_a_kind(hand):
         lst1.append(DICT_P[i[0]])
     lst1.sort()
     for k in range(len(lst1)-1):
-        if lst1[k+1]== lst1[k]:
+        if lst1[k+1] == lst1[k]:
             cnt += 1
-   
     return cnt == 3
-
 def is_three_a_kind(hand):
+    '''
+program for three a kind
+    '''
     cnt = 0
     lst1 = []
     for i in hand:
         lst1.append(DICT_P[i[0]])
     lst1.sort()
     for k in range(len(lst1)-1):
-        if lst1[k+1]== lst1[k]:
+        if lst1[k+1] == lst1[k]:
             cnt += 1
     return cnt == 2
 
 def is_one_pair(hand):
+    '''
+    one pair of hand
+    '''
     cnt = 0
     lst1 = []
     for i in hand:
@@ -76,6 +81,9 @@ def is_one_pair(hand):
             cnt += 1
     return cnt == 0
 def is_two_pair(hand):
+    '''
+    two pairs of hand
+    '''
     cnt = 0
     lst1 = []
     for i in hand:
@@ -84,8 +92,7 @@ def is_two_pair(hand):
     for k in range(len(lst1)-1):
         if lst1[k+1] - lst1[k] == 0:
             cnt += 1
-    return cnt == 1      
-
+    return cnt == 1
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to
