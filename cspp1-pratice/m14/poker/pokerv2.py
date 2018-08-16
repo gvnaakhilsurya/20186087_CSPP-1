@@ -59,7 +59,6 @@ def is_three_akind(hand):
 		if suit[k+1] == suit[k]:
 			cnt +=1
 	return cnt==2
-def 
 	
 def hand_rank(hand):
     '''
