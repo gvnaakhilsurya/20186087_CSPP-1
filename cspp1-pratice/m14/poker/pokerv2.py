@@ -49,7 +49,7 @@ def is_four_akind(hand):
 		if suit[k+1] == suit[k]:
 			cnt += 1
 	return cnt == 3
-def is_three_akind(hand):
+def is_three_a_kind(hand):
 	cnt = 0
 	suit = []
 	for i in hand:
@@ -88,7 +88,7 @@ def hand_rank(hand):
     	return 8
     elif is_two_pair(hand):
     	return 7
-    elif three_a_kind(hand):
+    elif is_three_a_kind(hand):
     	return 6
     elif is_straight(hand):
     	return 5
