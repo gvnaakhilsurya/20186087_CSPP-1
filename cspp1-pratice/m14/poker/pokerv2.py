@@ -1,10 +1,10 @@
-i'''
+'''
     Write a program to evaluate poker hands and determine the winner
     Read about poker hands here.
     https://en.wikipedia.org/wiki/List_of_poker_hands
 '''
-D_poke = {'2':2, '3':3, '4':4, '5':5, '6':6, '7':7, '8':8,
- '9':9, 'T':10, 'J':11, 'Q':12, 'K':13, 'A':14}
+DICT_P = {'2':2, '3':3, '4':4, '5':5, '6':6, '7':7, '8':8,
+          '9':9, 'T':10, 'J':11, 'Q':12, 'K':13, 'A':14}
 
 def is_straight(hand):
     '''
@@ -16,16 +16,14 @@ def is_straight(hand):
         Think of an algorithm: given the card face value how to check if it a straight
         Write the code for it and return True if it is a straight else return False
     '''
-    suit =[]
+    suit = []
     for i in hand:
-        suit.append(D_poke[i[0]])
+        suit.append(DICT_P[i[0]])
     suit.sort()
     for k in range(len(suit)-1):
-        if suit[k+1]-suit[k]!=1:
+        if suit[k+1]-suit[k] != 1:
             return False
-    return True        
-
-
+    return True
 def is_flush(hand):
     '''
         How do we find out if the given hand is a flush?
@@ -39,17 +37,18 @@ def is_flush(hand):
     for i in hand:
         if suit[1] != i[1]:
             return False
-    return True    
-def four_akind(hand):
-	suit =[]
-	cnt = 0
-	    for i in hand:
-	        suit.append(D_poke[i[0]])
-	    suit.sort()
-	for k in range(len(suit)-1):
+    return True
 
-	    if suit[k+1]= suit[k]
-	        cnt	+= 1
+def four_akind(hand):
+	cnt = 0
+	suit = []
+	for i in hand:
+		 suit.append(DICT_P[i[0]])
+		 suit.sort()
+	for k in range(len(suit)-1):
+		if suit[k+1] == suit[k]:
+			cnt += 1
+	return cnt ==3	
 
 def hand_rank(hand):
     '''
