@@ -3,7 +3,7 @@
     Read about poker hands here.
     https://en.wikipedia.org/wiki/List_of_poker_hands
 '''
-d_poke = {'2':2, '3':3, '4':4, '5':5, '6':6, '7':7, '8':8,
+DICT_P = {'2':2, '3':3, '4':4, '5':5, '6':6, '7':7, '8':8,
           '9':9, 'T':10, 'J':11, 'Q':12, 'K':13, 'A':14}
 
 def is_straight(hand):
@@ -18,7 +18,7 @@ def is_straight(hand):
     '''
     suit = []
     for i in hand:
-        suit.append(d_poke[i[0]])
+        suit.append(DICT_P[i[0]])
     suit.sort()
     for k in range(len(suit)-1):
         if suit[k+1]-suit[k] != 1:
