@@ -16,7 +16,7 @@ def is_straight(hand):
         Think of an algorithm: given the card face value how to check if it a straight
         Write the code for it and return True if it is a straight else return False
     '''
-    suit =[]
+    suit = []
     for i in hand:
         suit.append(D_poke[i[0]])
     suit.sort()
