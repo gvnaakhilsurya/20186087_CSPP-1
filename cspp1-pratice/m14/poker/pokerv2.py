@@ -41,7 +41,7 @@ def is_flush(hand):
 
 def is_four_a_kind(hand):
     cnt = 0
-    lst1 = [ ]
+    lst1 =[]
     for i in hand:
         lst1.append(DICT_P[i[0]])
     lst1.sort()
@@ -53,7 +53,7 @@ def is_four_a_kind(hand):
 
 def is_three_a_kind(hand):
     cnt = 0
-    lst1 = [ ]
+    lst1 = []
     for i in hand:
         lst1.append(DICT_P[i[0]])
     lst1.sort()
@@ -65,7 +65,7 @@ def is_three_a_kind(hand):
 
 def is_one_pair(hand):
     cnt = 0
-    lst1 = [ ]
+    lst1 = []
     for i in hand:
         lst1.append(DICT_P[i[0]])
     lst1.sort()
@@ -79,7 +79,7 @@ def is_one_pair(hand):
 
 def is_two_pair(hand):
     cnt = 0
-    lst1 = [ ]
+    lst1 = []
     for i in hand:
         lst1.append(DICT_P[i[0]])
     lst1.sort()
