@@ -73,8 +73,8 @@ def is_one_pair(hand):
         if lst1[k+1] - lst1[k] == 0:
             cnt += 1
     
-    
-    return cnt == 1
+
+    return cnt == 0
 
 
 def is_two_pair(hand):
@@ -87,7 +87,7 @@ def is_two_pair(hand):
         if lst1[k+1] - lst1[k] == 0:
             cnt += 1
 
-    return cnt == 2      
+    return cnt == 1      
 
 def hand_rank(hand):
     '''
