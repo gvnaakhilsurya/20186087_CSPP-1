@@ -40,6 +40,9 @@ def is_flush(hand):
     return True
 
 def is_four_a_kind(hand):
+    '''
+
+    '''
     cnt = 0
     lst1 = []
     for i in hand:
@@ -71,9 +74,7 @@ def is_one_pair(hand):
     for k in range(len(lst1)-1):
         if lst1[k+1] - lst1[k] == 0:
             cnt += 1
-
     return cnt == 0
-    
 def is_two_pair(hand):
     cnt = 0
     lst1 = []
@@ -83,7 +84,6 @@ def is_two_pair(hand):
     for k in range(len(lst1)-1):
         if lst1[k+1] - lst1[k] == 0:
             cnt += 1
-
     return cnt == 1      
 
 def hand_rank(hand):
