@@ -40,26 +40,26 @@ def is_flush(hand):
     return True
 
 def is_four_akind(hand):
-	cnt = 0
-	suit = []
-	for i in hand:
-		 suit.append(DICT_P[i[0]])
-		 suit.sort()
-	for k in range(len(suit)-1):
-		if suit[k+1] == suit[k]:
-			cnt += 1
-	return cnt == 3
+    cnt = 0
+    suit = []
+    for i in hand:
+         suit.append(DICT_P[i[0]])
+         suit.sort()
+    for k in range(len(suit)-1):
+        if suit[k+1] == suit[k]:
+            cnt += 1
+    return cnt == 3
 def is_three_a_kind(hand):
-	cnt = 0
-	suit = []
-	for i in hand:
-		suit.append(DICT_P[i[0]])
-		suit.sort()
-	for k in range(len(suit)-1):
-		if suit[k+1] == suit[k]:
-			cnt +=1
-	return cnt==2
-	
+    cnt = 0
+    suit = []
+    for i in hand:
+        suit.append(DICT_P[i[0]])
+        suit.sort()
+    for k in range(len(suit)-1):
+        if suit[k+1] == suit[k]:
+            cnt +=1
+    return cnt==2
+    
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to
@@ -85,23 +85,23 @@ def hand_rank(hand):
     # any other hand would be the fourth best with the return value 0
     # max in poker function uses these return values to select the best hand
     if is_one_pair(hand):
-    	return 8
+        return 8
     elif is_two_pair(hand):
-    	return 7
+        return 7
     elif is_three_a_kind(hand):
-    	return 6
+        return 6
     elif is_straight(hand):
-    	return 5
+        return 5
     elif is_flush(hand):
-    	return 4
+        return 4
     elif is_full_house(hand):
-    	return 3
+        return 3
     elif is_four_akind(hand):
-    	return 2
+        return 2
     elif is_straight(hand) and is_flush(hand):
-    	return 1
+        return 1
     else:
-    	return 0
+        return 0
 
 def poker(hands):
     '''
