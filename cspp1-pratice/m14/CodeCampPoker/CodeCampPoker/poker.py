@@ -4,7 +4,7 @@
     https://en.wikipedia.org/wiki/List_of_poker_hands
 '''
 D_poke = {'2':2, '3':3,'4':4,'5':5, '6':6, '7':7, '8':8,
- '9':9, 'T':10, 'J':11, 'Q':12, "K":13, 'A':14}
+ '9':9, 'T':10, 'J':11, 'Q':12, 'K':13, 'A':14}
 
 def is_straight(hand):
     '''
@@ -16,10 +16,14 @@ def is_straight(hand):
         Think of an algorithm: given the card face value how to check if it a straight
         Write the code for it and return True if it is a straight else return False
     '''
-    for i in range(0,len(hand)-1):
-        if hand[i+1] - hand[i]!=1:
+    suit =[]
+    for i in hand:
+        suit.append(D_poke[i[0]])
+    suit.sort()
+    for k in range(len(suit)-1):
+        if suit[k+1]-suit[k]!=1:
             return False
-    return True
+    return True        
 
 
 def is_flush(hand):
