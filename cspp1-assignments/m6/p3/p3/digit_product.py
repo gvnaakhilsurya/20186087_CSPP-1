@@ -11,7 +11,8 @@ def main():
     '''
     n = int(input())
     p = 1
-    while i>0:
+    i = 1
+    while n>0:
         a = n%10
         n = n//10
         p = p*a
