@@ -74,14 +74,12 @@ def build_search_index(docs):
 
     return dict_1
 
-
 def remove_stopwords(word, STOP_WORD):
     LIST_1 = word
     for w_1 in word:
         if w_1 in STOP_WORD:
             LIST_1.remove(w_1)
     return LIST_1
-
 
 def print_search_index(index):
     '''
