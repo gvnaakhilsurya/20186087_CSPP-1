@@ -1,7 +1,5 @@
 '''
     Tiny Search Engine - Part 1 - Build a search index
-    
-
     In this programming assingment you are given with some text documents as input.
     Complete the program below to build a search index. Don't worry, it is explained below.
     A search index is a python dictionary.
@@ -75,6 +73,9 @@ def build_search_index(docs):
     return dict_1
 
 def remove_stopwords(word, STOP_WORD):
+    '''
+
+    '''
     LIST_1 = word
     for w_1 in word:
         if w_1 in STOP_WORD:
