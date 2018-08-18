@@ -13,7 +13,7 @@ def main():
     p = 1
     i = 1
     while i>0:
-        a = i%10
+        n = i%10
         i = i//10
         p = p*a
     print(p)
