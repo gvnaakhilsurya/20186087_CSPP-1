@@ -28,8 +28,10 @@ def remove_stopwords(word, STOP_WORD):
     return LIST_1
 def print_search_index(index):
     keys = sorted(index.keys())
-for key in keys:
-    print(key, " - ", index[key])
+    for key in keys:
+        print(key, " - ", index[key])
+
+    
 def main():
     '''
         main function
