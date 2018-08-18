@@ -22,6 +22,7 @@
 '''
 
 # helper function to load the stop words from a file
+import re
 def load_stopwords(filename):
     '''
         loads stop words from a file and returns a dictionary
@@ -39,10 +40,10 @@ def word_list(text):
         Clean up the text by remvoing all the non alphabet characters
         return a list of words
     '''
-    clear_string = re.sub(r'\w\s+', " ", words).replace(',','').replace('\'','')
-    list_words = clear_string.lower().split()
-    return list_words
-
+    regex = re.compile('[^a-z]')
+    clean_words = [regex.sub("", w.strip()) for w in string.lower().split(" ")]
+    return clean_words
+    
 def build_search_index(docs):
     '''
         Process the docs step by step as given below
@@ -60,9 +61,25 @@ def build_search_index(docs):
 
     # return search index
     
-    pass
+    dict_i = {}
+    STOP_WORD = load_stopwords("stopwords.txt")
+    for index, line in enumerate(docs):
+        LIST_a = remove_stopwords(word_list(line), STOP_WORD)
+        for word in set(LIST_a):
+            if word in dict_i:
+                dict_i[word].append((index, LIST_a.count(word)))
+            else:
+                dict_i[word] = [(index, LIST_a.count(word))]
+    return dict_i
 # helper function to print the search index
 # use this to verify how the search index looks
+
+def remove_stopwords(word, STOP_WORD):
+    LIST_i = word
+    for w_1 in word:
+        if w_1 in STOP_WORD:
+            LIST_i.remove(w_1)
+    return LIST_i
 def print_search_index(index):
     '''
         print the search index
@@ -84,7 +101,7 @@ def main():
     for i in range(lines):
         documents.append(input())
         i += 1
-    print(documents)
+
     # call print to display the search index
     print_search_index(build_search_index(documents))
 
