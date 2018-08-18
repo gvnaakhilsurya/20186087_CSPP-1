@@ -28,9 +28,11 @@ def load_stopwords(filename):
         for line in f_stopwords:
             stopwords[line.strip()] = 0
     return stopwords
+
 def word_list(string):
     regex = re.compile('[^a-z]')
     return [regex.sub("", w.strip()) for w in string.lower().split(" ")]
+
 def build_search_index(docs):
     dict_1 = {}
     STOP_WORD = load_stopwords("stopwords.txt")
@@ -49,11 +51,13 @@ def remove_stopwords(word, STOP_WORD):
         if w_1 in STOP_WORD:
             LIST_1.remove(w_1)
     return LIST_1
+
 def print_search_index(index):
 
     keys = sorted(index.keys())
     for key in keys:
-    print(key, " - ", index[key])
+        print(key, " - ", index[key])
+
 def main():
     '''
         main function
