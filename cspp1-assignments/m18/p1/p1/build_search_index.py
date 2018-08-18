@@ -1,3 +1,26 @@
+'''
+    Tiny Search Engine - Part 1 - Build a search index
+
+    In this programming assingment you are given with some text documents as input.
+    Complete the program below to build a search index. Don't worry, it is explained below.
+    A search index is a python dictionary.
+    The keys of this dictionary are words contained in ALL the input text documents.
+    The values are a list of documents such that the key/word appears in each document atleast once.
+    The document in the list is represented as a tuple.
+    The tuple has 2 items. The first item is the document ID.
+    Document ID is represented by the list index.
+    For example: the document ID of the third document in the list is 2
+    The second item of the tuple is the frequency of the word occuring in the document.
+
+    Here is the sample format of the dictionary.
+    {
+        word1: [(doc_id, frequency),(doc_id, frequency),...],
+        word2: [(doc_id, frequency),(doc_id, frequency),...],
+        .
+        .
+    }
+'''
+
 import re
 def load_stopwords(filename):
     stopwords = {}
@@ -27,11 +50,10 @@ def remove_stopwords(word, STOP_WORD):
             LIST_1.remove(w_1)
     return LIST_1
 def print_search_index(index):
+
     keys = sorted(index.keys())
     for key in keys:
-        print(key, " - ", index[key])
-
-    
+    print(key, " - ", index[key])
 def main():
     '''
         main function
@@ -46,4 +68,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
