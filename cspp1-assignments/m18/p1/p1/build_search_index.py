@@ -68,9 +68,9 @@ def build_search_index(docs):
         LIST_ = remove_stopwords(word_list(line), STOP_WORD)
     for word in set(LIST_):
          if word in dict_1:
-                dict_1[word].append((index_dict_1, LIST_.count(word)))
+                dict_1[word].append((index_dict, LIST_.count(word)))
          else:
-             dict_1[word] = [(index_dict_1, LIST_.count(word))]  
+             dict_1[word] = [(index_dict, LIST_.count(word))]  
 
     return dict_1
 
