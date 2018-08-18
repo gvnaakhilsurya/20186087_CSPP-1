@@ -13,9 +13,9 @@ def main():
     p = 1
     i = 1
     while i>0:
-        n = i%10
+        n = n%10
         i = i//10
-        p = p*n
+        p = p*a
     print(p)
 
 if __name__ == "__main__":
