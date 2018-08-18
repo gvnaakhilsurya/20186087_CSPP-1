@@ -27,7 +27,7 @@ def remove_stopwords(word, STOP_WORD):
             LIST_1.remove(w_1)
     return LIST_1
 def print_search_index(index):
-keys = sorted(index.keys())
+    keys = sorted(index.keys())
 for key in keys:
     print(key, " - ", index[key])
 def main():
