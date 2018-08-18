@@ -71,7 +71,6 @@ def build_search_index(docs):
              dict_1[word] = [(index_dict, LIST_.count(word))]  
 
     return dict_1
-    print(dict_1)
 
 def remove_stopwords(word, STOP_WORD):
     '''
