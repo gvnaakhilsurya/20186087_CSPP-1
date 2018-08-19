@@ -80,9 +80,6 @@ def get_wordscore(word, n_in):
             return (count * len(word) + 50)
         return (count * len(word))
 
-
-
-#
 # Problem #2: Make sure you understand how this function works and what it does!
 #
 def display_hand(hand):
@@ -99,11 +96,10 @@ def display_hand(hand):
     """
     for letter in hand.keys():
         for j in range(hand[letter]):
-            print(letter, end="")              # print all on the same line
+            print(letter, end="")         # print all on the same line
     print()                               # print an empty line
 #
 # Problem #2: Make sure you understand how this function works and what it does!
-#
 def deal_hand(n_in):
     """
     Returns a random hand containing n lowercase letters.
@@ -273,8 +269,6 @@ def play_game(word_list):
             break
         else:
             print("Invalid input")
-
-
 #
 # Build data structures used for entire session and play game
 #
