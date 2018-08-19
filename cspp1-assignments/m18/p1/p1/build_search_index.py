@@ -83,6 +83,8 @@ def remove_stopwords(word, STOP_WORD):
     #     if w_1 in STOP_WORD:
     #         LIST_1.remove(w_1)
     # return LIST_1
+    print(word)
+    print
     list1 = []
     for w in word:
         if w not in STOP_WORD:
