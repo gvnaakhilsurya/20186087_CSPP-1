@@ -29,7 +29,7 @@ def load_stopwords(filename):
     with open(filename, 'r') as f_stopwords:
         for line in f_stopwords:
             stopwords[line.strip()] = 0
-    print(stopwords)
+    # print(stopwords)
     return stopwords
 
 
@@ -42,6 +42,7 @@ def word_list(string):
 
     regex = re.compile('[^a-z]')
     clean_words = [regex.sub("", word.strip()) for word in string.lower().split(" ")]
+    print(clean_words)
     return clean_words
 
 
