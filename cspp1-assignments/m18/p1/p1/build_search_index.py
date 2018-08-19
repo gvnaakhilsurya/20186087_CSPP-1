@@ -42,7 +42,7 @@ def word_list(string):
 
     regex = re.compile('[^a-z]')
     clean_words = [regex.sub("", word.strip()) for word in string.lower().split(" ")]
-    print(clean_words)
+    # print(clean_words)
     return clean_words
 
 
@@ -78,11 +78,16 @@ def remove_stopwords(word, STOP_WORD):
     '''
 
     '''
-    LIST_1 = word[:]
-    for w_1 in word:
-        if w_1 in STOP_WORD:
-            LIST_1.remove(w_1)
-    return LIST_1
+    # LIST_1 = word[:]
+    # for w_1 in word:
+    #     if w_1 in STOP_WORD:
+    #         LIST_1.remove(w_1)
+    # return LIST_1
+    list1 = []
+    for w in word:
+        if w not in STOP_WORD:
+            list1.append(w)
+    return list1
 
 def print_search_index(index):
     '''
