@@ -73,7 +73,7 @@ def build_search_index(docs):
             else:
                 dict_1[word].append((index_dict, LIST_.count(word)))
                 print(dict_1)
-        return dict_1
+    return dict_1
 
 def remove_stopwords(word, STOP_WORD):
     '''
