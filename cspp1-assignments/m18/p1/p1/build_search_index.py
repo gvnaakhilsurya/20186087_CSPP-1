@@ -64,7 +64,7 @@ def build_search_index(docs):
     stop_word = load_stopwords("stopwords.txt")
     for index_dict, line in enumerate(docs):
         LIST_ = remove_stopwords(word_list(line), stop_word)
-        for word in set(LIST_):  
+        for word in set(LIST_):
             if word not in dict_1:
                 dict_1[word] = [(index_dict, LIST_.count(word))]
             else:
