@@ -67,12 +67,12 @@ def build_search_index(docs):
     for index_dict, line in enumerate(docs):
         LIST_ = remove_stopwords(word_list(line), stop_word)
         # print(set(LIST_))
-    for word in set(LIST_):
-        if word in dict_1:
-            dict_1[word].append((index_dict, LIST_.count(word)))
-        else:
+    for word in LIST_:
+        if word not in dict_1:
             dict_1[word] = [(index_dict, LIST_.count(word))]
-            print(dict_1)  
+        else:
+            dict_1[word].append((index_dict, LIST_.count(word)))
+            print(dict_1)
     return dict_1
 
 def remove_stopwords(word, STOP_WORD):
