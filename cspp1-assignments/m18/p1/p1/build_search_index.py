@@ -89,6 +89,7 @@ def remove_stopwords(word, STOP_WORD):
         w = w.strip()
         if w not in STOP_WORD:
             list1.append(w)
+    print(list1)
     return list1
 
 def print_search_index(index):
