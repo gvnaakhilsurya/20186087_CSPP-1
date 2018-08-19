@@ -84,11 +84,11 @@ def remove_stopwords(word, STOP_WORD):
     #         LIST_1.remove(w_1)
     # return LIST_1
     print(word)
-    print
     list1 = []
     for w in word:
+        w = w.strip()
         if w not in STOP_WORD:
-            list1.append(w)
+            list1 += w
     return list1
 
 def print_search_index(index):
