@@ -71,7 +71,7 @@ def build_search_index(docs):
             dict_1[word].append((index_dict, LIST_.count(word)))
         else:
             dict_1[word] = [(index_dict, LIST_.count(word))]  
-
+    print(dict_1)
     return dict_1
 
 def remove_stopwords(word, STOP_WORD):
@@ -89,7 +89,7 @@ def remove_stopwords(word, STOP_WORD):
         w = w.strip()
         if w not in STOP_WORD:
             list1.append(w)
-    print(list1)
+    # print(list1)
     return list1
 
 def print_search_index(index):
