@@ -1,11 +1,71 @@
 '''
-    @author:gvnaakkhilsurya
     Write a program to evaluate poker hands and determine the winner
     Read about poker hands here.
     https://en.wikipedia.org/wiki/List_of_poker_hands
 '''
-DICT_P = {'2':2, '3':3, '4':4, '5':5, '6':6, '7':7, '8':8,
-          '9':9, 'T':10, 'J':11, 'Q':12, 'K':13, 'A':14}
+GLOBAL_DICT = {
+    '2':2, '3':3, '4':4, '5':5, '6':6, '7':7, '8':8, '9':9, 'T':10, 'J':11, 'Q':12, 'K':13, 'A': 14}
+
+def get_face_values(hand):
+    '''
+    returns face value
+    '''
+    face_values = [GLOBAL_DICT[f] for f, suit_value in hand]
+    return face_values
+
+def get_suit_values(hand):
+    '''
+    returns suit values
+    '''
+    suit_values = [s for f, s in hand]
+    return suit_values
+
+def is_four_of_kind(hand):
+    '''
+    returns four of a kind
+    '''
+    face_values = get_face_values(hand)
+    face_values.sort()
+    return len(set(face_values[:-1])) == 1 or len(set(face_values[-4:])) == 1
+
+
+def is_three_of_kind(hand):
+    '''
+    returns three of a kind
+    '''
+    face_values = get_face_values(hand)
+    face_values.sort()
+    return len(set(face_values)) == 3
+
+
+def is_one_pair(hand):
+    '''
+    returns one pair
+    '''
+    face_values = get_face_values(hand)
+    face_values.sort()
+    return len(set(face_values)) == 4
+
+
+def is_two_pair(hand):
+    '''
+    retruns two pair
+    '''
+    face_values = get_face_values(hand)
+    face_values.sort()
+    return len(set(face_values)) == 3 and len(set(face_values[:2])) == 1 or len(set(face_values[1:3])) == 1
+
+
+
+def is_full_house(hand):
+    '''
+    returns full house
+    '''
+    face_values = get_face_values(hand)
+    face_values.sort()
+    return len(set(face_values)) == 2
+
+
 
 def is_straight(hand):
     '''
@@ -17,14 +77,9 @@ def is_straight(hand):
         Think of an algorithm: given the card face value how to check if it a straight
         Write the code for it and return True if it is a straight else return False
     '''
-    suit = []
-    for i in hand:
-        suit.append(DICT_P[i[0]])
-    suit.sort()
-    for k in range(len(suit)-1):
-        if suit[k+1]-suit[k] != 1:
-            return False
-    return True
+    face_values = [GLOBAL_DICT[f] for f, suit_value in hand]
+    return sum(face_values) - min(face_values)*len(face_values) == 10
+
 def is_flush(hand):
     '''
         How do we find out if the given hand is a flush?
@@ -34,65 +89,9 @@ def is_flush(hand):
         Think of an algorithm: given the card suite how to check if it is a flush
         Write the code for it and return True if it is a flush else return False
     '''
-    suit = hand[0]
-    for i in hand:
-        if suit[1] != i[1]:
-            return False
-    return True
+    return len(set(s for f, s in hand)) == 1
 
-def is_four_a_kind(hand):
-    '''
-program for four a kind
-    '''
-    cnt = 0
-    lst1 = []
-    for i in hand:
-        lst1.append(DICT_P[i[0]])
-    lst1.sort()
-    for k in range(len(lst1)-1):
-        if lst1[k+1] == lst1[k]:
-            cnt += 1
-    return cnt == 3
-def is_three_a_kind(hand):
-    '''
-program for three a kind
-    '''
-    cnt = 0
-    lst1 = []
-    for i in hand:
-        lst1.append(DICT_P[i[0]])
-    lst1.sort()
-    for k in range(len(lst1)-1):
-        if lst1[k+1] == lst1[k]:
-            cnt += 1
-    return cnt == 2
 
-def is_one_pair(hand):
-    '''
-    one pair of hand
-    '''
-    cnt = 0
-    lst1 = []
-    for i in hand:
-        lst1.append(DICT_P[i[0]])
-    lst1.sort()
-    for k in range(len(lst1)-1):
-        if lst1[k+1] - lst1[k] == 0:
-            cnt += 1
-    return cnt == 0
-def is_two_pair(hand):
-    '''
-    two pairs of hand
-    '''
-    cnt = 0
-    lst1 = []
-    for i in hand:
-        lst1.append(DICT_P[i[0]])
-    lst1.sort()
-    for k in range(len(lst1)-1):
-        if lst1[k+1] - lst1[k] == 0:
-            cnt += 1
-    return cnt == 1
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to
@@ -119,20 +118,22 @@ def hand_rank(hand):
     # max in poker function uses these return values to select the best hand
     if is_straight(hand) and is_flush(hand):
         return 8
-    elif is_four_a_kind(hand):
+    if is_four_of_kind(hand):
         return 7
-    elif is_flush(hand):
+    if is_full_house(hand):
         return 6
-    elif is_straight(hand):
+    if is_flush(hand):
         return 5
-    elif is_three_a_kind(hand):
+    if is_straight(hand):
         return 4
-    elif is_two_pair(hand):
+    if is_three_of_kind(hand):
         return 3
-    elif is_one_pair(hand):
+    if is_two_pair(hand):
         return 2
-    else:
-        return 0
+    if is_one_pair(hand):
+        return 1
+    return 0
+
 
 def poker(hands):
     '''
@@ -161,7 +162,7 @@ if __name__ == "__main__":
     HANDS = []
     for x in range(COUNT):
         line = input()
-        ha = line.split(" ")
-        HANDS.append(ha)
+        hand_list = line.split(" ")
+        HANDS.append(hand_list)
     # test the poker function to see how it works
     print(' '.join(poker(HANDS)))
