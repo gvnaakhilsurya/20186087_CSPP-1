@@ -1,19 +1,19 @@
 def is_win_tic_tac(matrix):
-    if matrix[0][0] == matrix[1][1] ==matrix[2][2]:
+    if matrix[0][0] == matrix[1][1] == matrix[2][2]:
         return matrix[0][0]
-    elif matrix[0][2] == matrix[1][1] ==matrix[2][0]:
+    elif matrix[0][2] == matrix[1][1] == matrix[2][0]:
         return matrix[0][2]
-    elif matrix[0][0] == matrix[1][0] ==matrix[2][0]:
+    elif matrix[0][0] == matrix[1][0] == matrix[2][0]:
         return matrix[0][0]
-    elif matrix[0][1] == matrix[1][1] ==matrix[2][1]:
+    elif matrix[0][1] == matrix[1][1] == matrix[2][1]:
         return matrix[0][1]
-    elif matrix[0][2] == matrix[1][2] ==matrix[2][2]:
+    elif matrix[0][2] == matrix[1][2] == matrix[2][2]:
         return matrix[0][2]
-    elif matrix[0][0] == matrix[0][1] ==matrix[0][2]:
+    elif matrix[0][0] == matrix[0][1] == matrix[0][2]:
         return matrix[0][0]
-    elif matrix[1][0] == matrix[1][1] ==matrix[1][2]:
+    elif matrix[1][0] == matrix[1][1] == matrix[1][2]:
         return matrix [1][0]
-    elif matrix[2][0] == matrix[2][1] ==matrix[2][2]:
+    elif matrix[2][0] == matrix[2][1] == matrix[2][2]:
         return matrix[2][0]
     else:
         return ("invalid input")
@@ -49,7 +49,7 @@ def main():
     clean_string = full_string(inp_tic)
     output = is_validation(clean_string)
     if output == 1:
-        print(is_win_tic_tac(clean_string))
+        print(is_win_tic_tac(inp_tic))
     else:
         print(output)
 
