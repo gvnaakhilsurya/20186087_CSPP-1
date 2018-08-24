@@ -1,3 +1,7 @@
+def is_winner_tictactoe(n):
+    tac_1 = empty_tictac()
+    
+
 
 
 def is_validation(n):
@@ -28,8 +32,11 @@ def full_string(tic):
 
 def main():
     inp_tic = empty_tictac()
+    print(empty_tictac())
     clean_string = full_string(inp_tic)
     print(is_validation(clean_string))
+
+
 
 if __name__ == '__main__':
     main()
