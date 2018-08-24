@@ -1,25 +1,25 @@
-def is_win_tic_tac(tac_1):
-    if tac_1[0][0] == tac_1[1][1] ==tac_1[2][2]:
-        return tac_1[0][0]
-    elif tac_1[0][2] == tac_1[1][1] ==tac_1[2][0]:
-        return tac_1[0][2]
-    elif tac_1[0][0] == tac_1[1][0] ==tac_1[2][0]:
-        return tac_1[0][0]
-    elif tac_1[0][1] == tac_1[1][1] ==tac_1[2][1]:
-        return tac_1[0][1]
-    elif tac_1[0][2] == tac_1[1][2] ==tac_1[2][2]:
-        return tac_1[0][2]
-    elif tac_1[0][0] == tac_1[0][1] ==tac_1[0][2]:
-        return tac_1[0][0]
-    elif tac_1[1][0] == tac_1[1][1] ==tac_1[1][2]:
-        return tac_1 [1][0]
-    elif tac_1[2][0] == tac_1[2][1] ==tac_1[2][2]:
-        return tac_1[2][0]
+def is_win_tic_tac(matrix):
+    if matrix[0][0] == matrix[1][1] ==matrix[2][2]:
+        return matrix[0][0]
+    elif matrix[0][2] == matrix[1][1] ==matrix[2][0]:
+        return matrix[0][2]
+    elif matrix[0][0] == matrix[1][0] ==matrix[2][0]:
+        return matrix[0][0]
+    elif matrix[0][1] == matrix[1][1] ==matrix[2][1]:
+        return matrix[0][1]
+    elif matrix[0][2] == matrix[1][2] ==matrix[2][2]:
+        return matrix[0][2]
+    elif matrix[0][0] == matrix[0][1] ==matrix[0][2]:
+        return matrix[0][0]
+    elif matrix[1][0] == matrix[1][1] ==matrix[1][2]:
+        return matrix [1][0]
+    elif matrix[2][0] == matrix[2][1] ==matrix[2][2]:
+        return matrix[2][0]
     else:
         return ("invalid input")
 
-def is_validation(n):
-    tic1_list = full_string(n)
+def is_validation(matrix):
+    tic1_list = full_string(matrix)
     if tic1_list.count('x') > 5 or  tic1_list.count('o') > 5 or tic1_list.count('x')== tic1_list.count('o') :
         return "invalid game"
     for i in range(len(tic1_list)):
@@ -31,15 +31,15 @@ def is_validation(n):
 
 def empty_tictac():
     # it converts the input into lists
-    tic = []
+    matrix = []
     for i in range(3):
         list_temp = input().split()
-        tic.append(list_temp)
-    return tic
+        matrix.append(list_temp)
+    return matrix
 
-def full_string(tic):
+def full_string(matrix):
     l = []
-    for i in tic:
+    for i in matrix:
         l.extend(i)
     return l
 
@@ -47,10 +47,10 @@ def full_string(tic):
 def main():
     inp_tic = empty_tictac()
     clean_string = full_string(inp_tic)
-    if is_validation(clean_string) == 1:
+    output = is_validation(clean_string) == 1:
         print(is_win_tic_tac(clean_string))
     else:
-        print(is_validation(clean_string))
+        print(output)
 
 
 if __name__ == '__main__':
