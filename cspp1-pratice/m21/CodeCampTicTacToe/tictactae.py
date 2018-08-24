@@ -26,6 +26,9 @@ def is_validation(matrix):
         for j in tic1_list:
             if j not in 'ox.':
                 return "invalid input"
+    if(tic1_list.count('x')== 4 and tic1_list.count('o')==5 ) or (tic1_list.count('x')== 5 and tic1_list.count('o')==4 ):
+        return "draw"
+
     return 1
 
 
