@@ -2,11 +2,10 @@
 
 def is_validation(n):
     tic1_list = full_string()
-    print(tic1_list)
     if tic1_list.count('x') > 5 or  tic1_list.count('o') > 5 :
         return "invalid game"
     for i in range(len(tic1_list)):
-        for j in tic1_list:
+        for j in tic1_list[0]:
             if j not in 'ox.':
                 return "invalid input"
     return 1
@@ -29,6 +28,8 @@ def full_string(tic):
 
 def main():
     inp_tic = empty_tictac()
+    print(full_string(inp_tic))
+
 if __name__ == '__main__':
     main()
 
