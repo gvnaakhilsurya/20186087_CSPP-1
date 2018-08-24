@@ -1,4 +1,23 @@
-
+def is_win_tic_tac(n):
+    tac_1 = empty_tictac()
+    if tac_1[0][0] == tac_1[1][1] ==tac_1[2][2]:
+        return tac_1[0][0]
+    elif tac_1[0][2] == tac_1[1][1] ==tac_1[2][0]:
+        return tac_1[0][2]
+    elif tac_1[0][0] == tac_1[1][0] ==tac_1[2][0]:
+        return tac_1[0][0]
+    elif tac_1[0][1] == tac_1[1][1] ==tac_1[2][1]:
+        return tac_1[0][1]
+    elif tac_1[0][2] == tac_1[1][2] ==tac_1[2][2]:
+        return tac_1[0][2]
+    elif tac_1[0][0] == tac_1[0][1] ==tac_1[0][2]:
+        return tac_1[0][0]
+    elif tac_1[1][0] == tac_1[1][1] ==tac_1[1][2]:
+        return tac_1 [1][0]
+    elif tac_1[2][0] == tac_1[2][1] ==tac_1[2][2]:
+        return tac_1[2][0]
+    else:
+        return ("invalid input")
 
 def is_validation(n):
     tic1_list = full_string(n)
@@ -30,6 +49,8 @@ def main():
     inp_tic = empty_tictac()
     clean_string = full_string(inp_tic)
     print(is_validation(clean_string))
+    if is_validation == 1:
+        print(is_win_tic_tac(n))
 
 if __name__ == '__main__':
     main()
