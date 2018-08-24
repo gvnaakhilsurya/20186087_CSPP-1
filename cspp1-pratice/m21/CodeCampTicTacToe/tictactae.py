@@ -1,7 +1,7 @@
 
 
 def is_validation(n):
-    tic1_list = full_string()
+    tic1_list = full_string(n)
     if tic1_list.count('x') > 5 or  tic1_list.count('o') > 5 :
         return "invalid game"
     for i in range(len(tic1_list)):
