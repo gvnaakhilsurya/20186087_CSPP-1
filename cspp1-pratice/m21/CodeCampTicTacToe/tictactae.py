@@ -20,8 +20,11 @@ def is_win_tic_tac(matrix):
 
 def is_validation(matrix):
     tic1_list = full_string(matrix)
-    if tic1_list.count('x') > 5 or  tic1_list.count('o') > 5 or tic1_list.count('x')== tic1_list.count('o') :
+    if tic1_list.count('x') > 5 or  tic1_list.count('o') > 5:
         return "invalid game"
+    elif:
+         tic1_list.count('x')== tic1_list.count('o') :
+         return "Draw game"
     for i in range(len(tic1_list)):
         for j in tic1_list:
             if j not in 'ox.':
