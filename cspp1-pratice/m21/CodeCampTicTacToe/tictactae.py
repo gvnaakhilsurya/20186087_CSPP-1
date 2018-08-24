@@ -1,12 +1,8 @@
-def is_winner_tictactoe(n):
-    tac_1 = empty_tictac()
-    
-pass
 
 
 def is_validation(n):
     tic1_list = full_string(n)
-    if tic1_list.count('x') > 5 or  tic1_list.count('o') > 5 or tic1_list.count('x') ==  tic1_list.count('o') :
+    if tic1_list.count('x') > 5 or  tic1_list.count('o') > 5 or tic1_list.count('x')== tic1_list.count('o') :
         return "invalid game"
     for i in range(len(tic1_list)):
         for j in tic1_list:
@@ -32,11 +28,8 @@ def full_string(tic):
 
 def main():
     inp_tic = empty_tictac()
-    print(empty_tictac())
     clean_string = full_string(inp_tic)
     print(is_validation(clean_string))
-
-
 
 if __name__ == '__main__':
     main()
