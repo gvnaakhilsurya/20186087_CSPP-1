@@ -34,7 +34,7 @@ def is_validation(matrix):
     if tic1_list.count('x') > 5 or  tic1_list.count('o') > 5  or\
       tic1_list.count('x') == tic1_list.count('o'):
         return "invalid game"
-    for char in range(len(tic1_list)):
+    for _ in range(len(tic1_list)):
         for j in tic1_list:
             if j not in 'ox.':
                 return "invalid input"
@@ -48,7 +48,7 @@ def empty_tictac():
     # it converts the input into lists
     '''
     matrix = []
-    for num in range(3):
+    for _ in range(3):
         list_temp = input().split()
         matrix.append(list_temp)
     return matrix
