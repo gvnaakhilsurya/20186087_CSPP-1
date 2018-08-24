@@ -1,7 +1,7 @@
 def is_winner_tictactoe(n):
     tac_1 = empty_tictac()
     
-
+pass
 
 
 def is_validation(n):
