@@ -48,8 +48,7 @@ def full_string(tic):
 def main():
     inp_tic = empty_tictac()
     clean_string = full_string(inp_tic)
-    print(is_validation(clean_string))
-    if is_validation == 1:
+    if is_validation(n) == 1:
         print(is_win_tic_tac(n))
 
 if __name__ == '__main__':
