@@ -1,5 +1,4 @@
-def is_win_tic_tac(n):
-    tac_1 = empty_tictac()
+def is_win_tic_tac(tac_1):
     if tac_1[0][0] == tac_1[1][1] ==tac_1[2][2]:
         return tac_1[0][0]
     elif tac_1[0][2] == tac_1[1][1] ==tac_1[2][0]:
@@ -52,6 +51,7 @@ def main():
         print(is_win_tic_tac(clean_string))
     else:
         print(is_validation(clean_string))
+
 
 if __name__ == '__main__':
     main()
