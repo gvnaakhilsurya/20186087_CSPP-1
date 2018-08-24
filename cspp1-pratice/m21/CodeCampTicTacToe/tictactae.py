@@ -47,7 +47,8 @@ def full_string(matrix):
 def main():
     inp_tic = empty_tictac()
     clean_string = full_string(inp_tic)
-    output = is_validation(clean_string) == 1:
+    output = is_validation(clean_string)
+    if output == 1:
         print(is_win_tic_tac(clean_string))
     else:
         print(output)
