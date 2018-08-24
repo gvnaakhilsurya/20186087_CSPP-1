@@ -6,24 +6,26 @@ def is_win_tic_tac(matrix):
     '''
 it gives the output coditions
     '''
+    return_string = ''
     if matrix[0][0] == matrix[1][1] == matrix[2][2]:
-        return matrix[0][0]
+        return_string = matrix[0][0]
     elif matrix[0][2] == matrix[1][1] == matrix[2][0]:
-        return matrix[0][2]
+        return_string = matrix[0][2]
     elif matrix[0][0] == matrix[1][0] == matrix[2][0]:
-        return matrix[0][0]
+        return_string = matrix[0][0]
     elif matrix[0][1] == matrix[1][1] == matrix[2][1]:
-        return matrix[0][1]
+        return_string = matrix[0][1]
     elif matrix[0][2] == matrix[1][2] == matrix[2][2]:
-        return matrix[0][2]
+        return_string = matrix[0][2]
     elif matrix[0][0] == matrix[0][1] == matrix[0][2]:
-        return matrix[0][0]
+        return_string = matrix[0][0]
     elif matrix[1][0] == matrix[1][1] == matrix[1][2]:
-        return matrix[1][0]
+        return_string = matrix[1][0]
     elif matrix[2][0] == matrix[2][1] == matrix[2][2]:
-        return matrix[2][0]
+        return_string = matrix[2][0]
     else:
-        return ("invalid input")
+        return_string = "invalid input"
+    return return_string
 def is_validation(matrix):
     '''
    It checks for the condition

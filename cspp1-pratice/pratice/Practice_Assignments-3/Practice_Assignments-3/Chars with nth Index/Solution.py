@@ -4,6 +4,10 @@ def chars_nth_index(s, n):
 	input : 4, M$itc1hL@pa$$w0rd
 	output : c@$d
 	'''
+	user_ = n 
+	for i,j in enumerate(user_):
+		if i%4
+
 
 def main():
 	s = input()

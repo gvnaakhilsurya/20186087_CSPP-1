@@ -5,8 +5,11 @@ def repeated_indexed_characters(string_input):
 	Output: bccdddeeeefffff (a is at 0 index, b at 1 index, c at 2 index……….)
 	return string with above model.
 	'''
-	pass
-
+	opera_ = string_input
+	temp_ = ''
+	for i,j in enumerate(opera_):
+		temp_ = temp_ + i * j
+	return temp_
 
 def main():
 	string_input = input()
