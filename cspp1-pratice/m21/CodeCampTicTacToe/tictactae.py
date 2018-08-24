@@ -28,7 +28,7 @@ def full_string(tic):
 
 def main():
     inp_tic = empty_tictac()
-    print(full_string(inp_tic))
+    print(is_validation(inp_tic))
 
 if __name__ == '__main__':
     main()
