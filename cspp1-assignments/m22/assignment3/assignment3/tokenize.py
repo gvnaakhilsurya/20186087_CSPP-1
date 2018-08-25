@@ -3,6 +3,9 @@ Write a function to tokenize a given string and return a dictionary with the fre
 each word
 '''
 def tokenize(string):
+    '''
+  It will split string into words and placed into dictionary
+    '''
     dictionary = {}
     user_string = string.replace(',.:;', '').split()
     for word in user_string:
@@ -15,6 +18,9 @@ def tokenize(string):
     return dictionary
             
 def main():
+    '''
+    It is the main function
+    '''
     string = ' '
     lines = int(input())
     for i in range(lines):
