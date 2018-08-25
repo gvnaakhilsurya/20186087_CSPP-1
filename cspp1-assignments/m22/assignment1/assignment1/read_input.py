@@ -7,9 +7,11 @@ def main():
 	lines = int(input())
 	for i in range(lines):
 		i += 1
-		string = input()
+		string += input()
 		string += '\n'
 	print(string)
+
+	
     
      
 if __name__ == '__main__':
