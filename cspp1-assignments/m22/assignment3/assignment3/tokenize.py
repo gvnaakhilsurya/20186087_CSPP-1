@@ -26,7 +26,7 @@ def main():
     for i in range(lines):
         i += 1
         string += input()
-        string +='\n'
+        string += '\n'
     print(tokenize(string))
 
 
