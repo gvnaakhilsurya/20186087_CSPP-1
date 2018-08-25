@@ -7,7 +7,7 @@ def main():
 	lines = int(input())
 	for i in range(lines):
 		i += 1
-		string += input()
+		string += input().strip()
 		string += '\n'
 	print(string)
 
