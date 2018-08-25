@@ -6,6 +6,7 @@ the key and frequency with a SPACE - SPACE.
 
 def print_dictionary(dictionary):
     '''
+    to print the dictionary 
     '''
     keys = sorted(dictionary.keys())
     for key in keys:
