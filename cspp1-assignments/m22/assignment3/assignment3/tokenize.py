@@ -9,10 +9,12 @@ def tokenize(string):
 	for word in user_string:
 		if word not in dictionary:
 			word = word.strip()
-			if word not in dictionary:
-				dictionary[word] = 1
-			else:
-				dictionary[word] += 1
+		if word not in dictionary:
+
+			dictionary[word] = 1
+
+		else:
+			dictionary[word] += 1
 	return dictionary
             
 def main():
