@@ -4,10 +4,9 @@ alphabets in both upper and lower case and numbers.
 '''
 import re
 def clean_string(string):
-	out_strn = string
-	regex = re.compile('[^a-z]')
-	out_strn = out_strn.lower().strip().replace("~!@#$%^&*()","")
-	return out_strn
+    string = string_input.lower().strip().replace('\'', '')
+    regex = re.compile('[^a-z]')
+    return string
     
 
 
