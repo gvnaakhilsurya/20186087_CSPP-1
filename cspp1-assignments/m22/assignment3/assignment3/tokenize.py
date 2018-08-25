@@ -5,7 +5,7 @@ each word
 
 def tokenize(string):
 	dictionary = {}
-	user_string = string.split().replace(',".:', '')
+	user_string = string.split().replace(',".:', ' ')
 	for word in user_string:
 		if word not in dictionary:
 			word = word.strip()
