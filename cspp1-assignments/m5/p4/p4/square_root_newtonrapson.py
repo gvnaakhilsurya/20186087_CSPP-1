@@ -10,11 +10,7 @@
 # output: 6.999999999999991
 '''
 def main():
-    '''
-    # epsilon and step are initialized
-    # don't change these values
-    to find the square root of the given number
-    '''
+
     epsilon = 0.01
     x_num = int(input())
     guess_val = x_num/2.0
