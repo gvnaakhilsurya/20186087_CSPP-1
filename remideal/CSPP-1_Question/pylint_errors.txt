@@ -8,15 +8,14 @@ Sudoko.py:3:13: C0326: Exactly one space required before comparison
 Sudoko.py:4:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
 Sudoko.py:7:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
 Sudoko.py:8:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Sudoko.py:9:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Sudoko.py:11:0: C0304: Final newline missing (missing-final-newline)
-Sudoko.py:11:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Sudoko.py:10:0: C0304: Final newline missing (missing-final-newline)
+Sudoko.py:10:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
 Sudoko.py:1:0: C0103: Module name "Sudoko" doesn't conform to snake_case naming style (invalid-name)
 Sudoko.py:1:0: C0111: Missing module docstring (missing-docstring)
 Sudoko.py:1:0: C0111: Missing function docstring (missing-docstring)
 Sudoko.py:2:1: W0612: Unused variable 'count' (unused-variable)
 Sudoko.py:6:0: C0111: Missing function docstring (missing-docstring)
 
-----------------------------------------------------------------------
-Your code has been rated at -5.00/10 (previous run: -16.67/10, +11.67)
+--------------------------------------------------------------------
+Your code has been rated at -5.56/10 (previous run: -5.00/10, -0.56)
 

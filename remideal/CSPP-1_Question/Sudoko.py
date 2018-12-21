@@ -5,7 +5,6 @@ def length_verify(line):
 
 def main():
 	line = input()
-	print(len(line))
 	length_verify(line)
 if __name__ == '__main__':
 	main()

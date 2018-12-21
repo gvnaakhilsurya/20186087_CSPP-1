@@ -1,9 +1,8 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 Given sudoku is solved
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -20,7 +19,6 @@ Expected Output:
 7
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -37,7 +35,6 @@ Expected Output:
 9
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -48,7 +45,6 @@ Expected Output:
 2
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -59,7 +55,6 @@ Expected Output:
 9
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -76,7 +71,6 @@ Expected Output:
 15
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -93,7 +87,6 @@ Expected Output:
 3
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -110,7 +103,6 @@ Expected Output:
 9
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -127,7 +119,6 @@ Expected Output:
 6
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -144,7 +135,6 @@ Expected Output:
 469
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -161,7 +151,6 @@ Expected Output:
 8
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -178,7 +167,6 @@ Expected Output:
 4
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -195,7 +183,6 @@ Expected Output:
 8
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -212,7 +199,6 @@ Expected Output:
 469
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -238,7 +224,6 @@ Expected Output:
 469
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -278,7 +263,6 @@ Expected Output:
 23689
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -287,7 +271,6 @@ Expected Output:
 Invalid Sudoku:Duplicate values
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -296,7 +279,7 @@ Expected Output:
 Invalid input
 
 Your Output: 
-73
+
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -304,7 +287,6 @@ Expected Output:
 Invalid Sudoku:Duplicate values
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -376,7 +358,6 @@ Expected Output:
 235689
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -385,7 +366,7 @@ Expected Output:
 Invalid input
 
 Your Output: 
-71
+
 ----------------------------------------
 
 ########## Testcase 21: Failed ##########
@@ -443,7 +424,6 @@ Expected Output:
 1346
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -509,7 +489,6 @@ Expected Output:
 4567
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -541,7 +520,6 @@ Expected Output:
 6
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
@@ -586,7 +564,6 @@ Expected Output:
 19
 
 Your Output: 
-81
 Given sudoku is solved
 ----------------------------------------
 
