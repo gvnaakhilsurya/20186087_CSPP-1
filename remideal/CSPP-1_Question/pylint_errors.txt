@@ -2,11 +2,10 @@
 Sudoko.py:2:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
 Sudoko.py:3:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
 Sudoko.py:3:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
-Sudoko.py:3:10: C0326: Exactly one space required around comparison
-	if(len(s)==81):
-          ^^ (bad-whitespace)
+Sudoko.py:3:13: C0326: Exactly one space required around comparison
+	if(len(line)==81):
+             ^^ (bad-whitespace)
 Sudoko.py:4:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Sudoko.py:5:0: C0303: Trailing whitespace (trailing-whitespace)
 Sudoko.py:7:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
 Sudoko.py:8:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
 Sudoko.py:10:0: C0304: Final newline missing (missing-final-newline)
@@ -14,11 +13,11 @@ Sudoko.py:10:0: W0312: Found indentation with tabs instead of spaces (mixed-inde
 Sudoko.py:1:0: C0103: Module name "Sudoko" doesn't conform to snake_case naming style (invalid-name)
 Sudoko.py:1:0: C0111: Missing module docstring (missing-docstring)
 Sudoko.py:1:0: C0111: Missing function docstring (missing-docstring)
-Sudoko.py:3:8: E0602: Undefined variable 's' (undefined-variable)
+Sudoko.py:3:8: E0602: Undefined variable 'line' (undefined-variable)
 Sudoko.py:2:1: W0612: Unused variable 'count' (unused-variable)
 Sudoko.py:6:0: C0111: Missing function docstring (missing-docstring)
 Sudoko.py:8:1: E1121: Too many positional arguments for function call (too-many-function-args)
 
 ----------------------------------------------------------------------
-Your code has been rated at -17.78/10 (previous run: -17.78/10, +0.00)
+Your code has been rated at -16.67/10 (previous run: -17.78/10, +1.11)
 
