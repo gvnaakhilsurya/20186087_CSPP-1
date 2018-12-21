@@ -12,8 +12,8 @@ def length_verify(line):
     if(len(line)== 81):
         check_duplicates(line)
     else:
-        if(len(line)== 81):
-
+        if(len(line)< 81):
+            print("Invalid input")
 
 def main():
     line = input()
