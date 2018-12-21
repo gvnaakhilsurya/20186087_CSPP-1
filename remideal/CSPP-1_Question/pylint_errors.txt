@@ -4,17 +4,14 @@ Sudoko.py:12:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens
 Sudoko.py:12:16: C0326: Exactly one space required before comparison
     if(len(line)== 81):
                 ^^ (bad-whitespace)
-Sudoko.py:15:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
-Sudoko.py:15:20: C0326: Exactly one space required before comparison
-        if(len(line)< 81):
-                    ^ (bad-whitespace)
-Sudoko.py:24:0: C0304: Final newline missing (missing-final-newline)
+Sudoko.py:15:0: W0311: Bad indentation. Found 12 spaces, expected 8 (bad-indentation)
+Sudoko.py:23:0: C0304: Final newline missing (missing-final-newline)
 Sudoko.py:1:0: C0103: Module name "Sudoko" doesn't conform to snake_case naming style (invalid-name)
 Sudoko.py:1:0: C0111: Missing module docstring (missing-docstring)
 Sudoko.py:2:0: C0111: Missing function docstring (missing-docstring)
 Sudoko.py:11:0: C0111: Missing function docstring (missing-docstring)
-Sudoko.py:19:0: C0111: Missing function docstring (missing-docstring)
+Sudoko.py:18:0: C0111: Missing function docstring (missing-docstring)
 
 ------------------------------------------------------------------
-Your code has been rated at 3.89/10 (previous run: 4.21/10, -0.32)
+Your code has been rated at 4.12/10 (previous run: 3.89/10, +0.23)
 
