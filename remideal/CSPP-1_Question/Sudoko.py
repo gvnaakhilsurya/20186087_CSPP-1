@@ -4,7 +4,7 @@ def check_duplicates(line):
 	if "." not  in line:
 		for i in line:
 			count = line.count(i)
-			if(count > 9):
+			if(count >= 9):
 				return False
 	return True
 def length_verify(line):

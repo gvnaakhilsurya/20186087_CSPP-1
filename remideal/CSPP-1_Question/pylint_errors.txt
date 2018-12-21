@@ -28,5 +28,5 @@ Sudoko.py:11:1: W0612: Unused variable 'count' (unused-variable)
 Sudoko.py:14:0: C0111: Missing function docstring (missing-docstring)
 
 --------------------------------------------------------------------
-Your code has been rated at -3.89/10 (previous run: -6.67/10, +2.78)
+Your code has been rated at -3.89/10 (previous run: -3.89/10, +0.00)
 
