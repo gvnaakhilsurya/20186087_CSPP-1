@@ -1,9 +1,10 @@
 def main():
 
-	s = ".726493815315728946489651237852147693673985124941362758194836572567214389238579461"
-	for i in s:
-		if "." in s:
-			print("is their")
+	s = "215647398368952174794381652586274931142593867973816425821739146659428.13437165281"
+	print(len(s))
+	# for i in s:
+	# 	if "." in s:
+	# 		print("is their")
 # for i in line:
 # 		count = check_string.count(i)
 # 		if count >9:
