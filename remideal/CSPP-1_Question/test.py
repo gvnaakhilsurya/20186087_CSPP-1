@@ -11,7 +11,10 @@ def main():
 	# 			break
 	# 		else:
 	# 			print("dpuli")
-	print(len(s))
+	if(len(s)== 81):
+		print("comp")
+	else if(len(s)<81):
+		print("invalid")
 
 		
 
