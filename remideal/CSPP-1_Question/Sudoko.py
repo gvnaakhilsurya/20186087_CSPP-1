@@ -8,12 +8,11 @@ def check_duplicates(line):
 				print("Given sudoku is solved")
 			elif:
 				print("duplicates")
-	
+	return 0
+
 def length_verify(line):
 	count = 0
 	if(len(line)== 81 & check_duplicates(line)):
-		
-
 def main():
 	line = input()
 	length_verify(line)
