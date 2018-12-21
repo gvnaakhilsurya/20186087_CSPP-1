@@ -7,9 +7,6 @@ def check_duplicates(line):
             if(count <= 9):
                 print("Given sudoku is solved")
                 break
-            else:
-                print("Invalid Sudoku:Duplicate values")
-
 
 def length_verify(line):
     if(len(line)== 81):
@@ -17,9 +14,6 @@ def length_verify(line):
     else:
         if(len(line)< 81):
             print("Invalid Input")
-
-
-
 
 
 def main():
