@@ -8,13 +8,15 @@ Sudoko.py:17:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens
 Sudoko.py:17:20: C0326: Exactly one space required before comparison
         if(len(line)< 81):
                     ^ (bad-whitespace)
+Sudoko.py:23:5: C0303: Trailing whitespace (trailing-whitespace)
 Sudoko.py:25:0: C0304: Final newline missing (missing-final-newline)
 Sudoko.py:1:0: C0103: Module name "Sudoko" doesn't conform to snake_case naming style (invalid-name)
 Sudoko.py:1:0: C0111: Missing module docstring (missing-docstring)
 Sudoko.py:2:0: C0111: Missing function docstring (missing-docstring)
+Sudoko.py:11:8: E0602: Undefined variable 'replace_digits' (undefined-variable)
 Sudoko.py:13:0: C0111: Missing function docstring (missing-docstring)
 Sudoko.py:20:0: C0111: Missing function docstring (missing-docstring)
 
 ------------------------------------------------------------------
-Your code has been rated at 4.21/10 (previous run: 3.89/10, +0.32)
+Your code has been rated at 1.05/10 (previous run: 4.21/10, -3.16)
 

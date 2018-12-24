@@ -1,18 +1,75 @@
-
-
+import re
 def main():
-	s =".26493815315.2894648965123.85214.6936.3985124941362.581948365.256.2143892385.9461"
-	# count = 0
-	# if "." not  in s:
-	# 	for i in s:
-	# 		count = s.count(i)
-	# 		if(count <= 9):
-	# 			print("comp")
-	# 			break
-	# 		else:
-	# 			print("dpuli")
-	
-		
-
-if __name__ == '__main__':
-	main()
+	inp = input()
+	inp = list(inp)
+	lis = []
+	i = 0
+	temp = []
+	for i in range(len(inp)):
+		if i%9==0 and i!=0:
+			lis.append(temp)		
+			temp = []
+		temp.append(inp[i])
+	lis.append(temp)
+	for i in range(len(lis)):
+		print(lis[i])
+		print()
+	for i in range(len(lis)):
+		for j in range(len(lis[0])):
+			if lis[i][j] == '.':
+				print(sudoku(lis,i,j))
+def sudoku(lis,i,j):
+	tem = []
+	for k in range(len(lis)):
+		tem.append(lis[k][j])
+	for m in range(len(lis[0])):
+		tem.append(lis[i][m])
+	if (i >= 0 and i <= 2) and (j >= 0 and j <= 2):
+		for x in range(0,3):
+			for y in range(0,3):
+				tem.append(lis[x][y])
+	elif (i >= 0 and i <= 2) and (j >= 3 and j <= 5):
+		for x in range(0,3):
+			for y in range(3,6):
+				tem.append(lis[x][y])
+	elif (i >= 0 and i <= 2) and (j >= 6 and j <= 8):
+		for x in range(0,3):
+			for y in range(6,9):
+				tem.append(lis[x][y])
+	elif (i >= 3 and i <= 5) and (j >= 0 and j <= 2):
+		for x in range(3,6):
+			for y in range(0,3):
+				tem.append(lis[x][y])
+	elif (i >= 3 and i <= 5) and (j >= 3 and j <= 5):
+		for x in range(3,6):
+			for y in range(3,6):
+				tem.append(lis[x][y])
+	elif (i >= 3 and i <= 5) and (j >= 6 and j <= 8):
+		for x in range(3,6):
+			for y in range(6,9):
+				tem.append(lis[x][y])
+	elif (i >= 6 and i <= 8) and (j >= 0 and j <= 2):
+		for x in range(6,9):
+			for y in range(0,3):
+				tem.append(lis[x][y])
+	elif (i >= 6 and i <= 8) and (j >= 3 and j <= 5):
+		for x in range(6,9):
+			for y in range(3,6):
+				tem.append(lis[x][y])
+	elif (i >= 6 and i <= 8) and (j >= 6 and j <= 8):
+		for x in range(6,9):
+			for y in range(6,9):
+				tem.append(lis[x][y])
+	string = ''.join(tem)
+	string = string.replace(".", "")
+	string = list(string)
+	inti = list(map(int,string))
+	whole = [1,2,3,4,5,6,7,8,9]
+	numbers = []
+	for h in range(len(whole)):
+		if whole[h] not in inti:
+			numbers.append(whole[h])
+	string1 = list(map(str,numbers))
+	string1 = ''.join(string1)
+	return string1
+main()

@@ -8,7 +8,7 @@ def check_duplicates(line):
                 print("Given sudoku is solved")
                 break
     else:
-        print(line)
+        replace_digits(line)
 
 def length_verify(line):
     if(len(line)== 81):
@@ -20,6 +20,6 @@ def length_verify(line):
 def main():
     line = input()
     length_verify(line)
-    # check_duplicates(line)
+    # 
 if __name__ == '__main__':
     main()
